@@ -12,6 +12,9 @@ interface RestfulApi {
     @GET("admin/car")
     fun getAllCar():Call<List<ResponseDataCarItem>>
 
+    @GET("admin/car")
+    fun getCar(): List<ResponseDataCarItem>
+
     @POST("admin/car")
     fun postCar(@Body car : PostDataCar) : Call<PostCarResponse>
 
